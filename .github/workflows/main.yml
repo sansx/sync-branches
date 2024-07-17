@@ -5,7 +5,7 @@ on:
       - main
 
 jobs:
-  sync-branches:
+  branches-sync:
     runs-on: ubuntu-latest
     name: Syncing branches
     steps:
