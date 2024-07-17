@@ -26,7 +26,7 @@ inputs:
     description: "Set to 'true' to force checking content comparison between the branches. Default: 'false'"
     required: false
   REVIEWERS:
-    description: "JSON array of GitHub user `login`s that will be requested to review the PR. Example: '['tretuna']'"
+    description: "JSON array of GitHub user `login`s that will be requested to review the PR. Example: '['sansx']'"
     required: false
     default: '[]'
   TEAM_REVIEWERS:
@@ -47,5 +47,5 @@ outputs:
   PULL_REQUEST_NUMBER:
     description: "Pull request number from generated pull request or the currently open one"
 runs:
-  using: "node12"
+  using: "node16"
   main: "dist/index.js"

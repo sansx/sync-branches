@@ -44,7 +44,7 @@ Default: `false`
 
 JSON array of GitHub user `login`s that will be requested to review the PR.
 
-Example: `'["tretuna"]'`
+Example: `'["sansx"]'`
 
 Default: `[]`
 ### `TEAM_REVIEWERS`
@@ -91,10 +91,10 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 16
       - name: Opening pull request
         id: pull
-        uses: tretuna/sync-branches@1.4.0
+        uses: sansx/sync-branches@1.0.0
         with:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           FROM_BRANCH: "main"
