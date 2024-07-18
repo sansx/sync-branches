@@ -91,7 +91,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v1
         with:
-          node-version: 16
+          node-version: 20
       - name: Opening pull request
         id: pull
         uses: sansx/sync-branches@1.0.0
